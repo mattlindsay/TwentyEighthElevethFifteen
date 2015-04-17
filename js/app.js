@@ -155,5 +155,5 @@
 var weddingDay = new Countdown({  // Custom
   selector: '.wedding-day',
   dateEnd: new Date('2015/11/29'),
-  msgPattern : 'Ceremony in {months} months, {days} days, {hours} hours, {minutes} minutes, {seconds} seconds !'
+  msgPattern : 'Ceremony in {months} months, {days} days, {hours} hours, {minutes} minutes, {seconds} seconds!'
 });

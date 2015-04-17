@@ -1,9 +1,54 @@
 // Custom Styles START //
 
 body {
+    
+    text-align: center;
+    font-weight: 100;
+    //font-family: "interface",sans-serif;
+    
     background: url('/image/balmoral_rotunda_by_arc_photography_FULL.png') no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+    
+    .wrapper {
+        background-color: rgba(0, 0, 0, 0.3);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        
+        img.main {
+            margin-top: 4em;
+            height: 80%;
+            width: 98vw;
+            display: table-cell;
+            
+            @media (max-width: @screen-sm-min) { margin-top: -1em; }
+        }
+        
+        h1 {
+           
+          }
+        
+    }
+    
 }
+
+
+
+// Timer Styles
+
+        .timer {
+                color: hotpink;
+                text-align: center;
+                font-size: 2.5em;
+                font-weight: 100;
+                
+                @media (max-width: @screen-sm-min) { font-size: 1.5em; }
+            }
+
+
+          
