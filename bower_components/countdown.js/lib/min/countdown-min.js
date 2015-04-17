@@ -1,0 +1,1 @@
+(function(){"use strict";var t=this,n=function(t,n,e){var r=t,i=function(){r>0?(n(r),r-=1):(clearInterval(o),e())},o=setInterval(function(t){return function(){i.call(t)}}(this),1e3);return i.call(this),{abort:function(){clearInterval(o)},getRemainingTime:function(){return r}}};"undefined"!=typeof exports?module.exports=exports=n:t.Countdown=n}).call(this);
