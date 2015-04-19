@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Celebrate Matt & Cath Tied the Knot!</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+      
+      
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      
+      <script>
+         $(function() {
+	
+            // IE detect
+            function iedetect(v) {
+
+                var r = RegExp('msie' + (!isNaN(v) ? ('\\s' + v) : ''), 'i');
+                return r.test(navigator.userAgent);
+
+            }
+
+            // For mobile screens, just show an image called 'poster.jpg'. Mobile
+            // screens don't support autoplaying videos, or for IE.
+            if(screen.width < 800 || iedetect(8) || iedetect(7) || 'ontouchstart' in window) {
+
+                (adjSize = function() { // Create function called adjSize
+
+                    $width = $(window).width(); // Width of the screen
+                    $height = $(window).height(); // Height of the screen
+
+                    // Resize image accordingly
+                    $('.wrapper.vid').css({
+                        'background-image' : 'url(poster.jpg)', 
+                        'background-size' : 'cover', 
+                        'width' : $width+'px', 
+                        'height' : $height+'px'
+                    });
+
+                    // Hide video
+                    $('video').hide();
+
+                })(); // Run instantly
+
+                // Run on resize too
+                $(window).resize(adjSize);
+            }
+            else {
+
+                // Wait until the video meta data has loaded
+                $('.vid_bg .wrapper.vid video').on('loadedmetadata', function() {
+
+                    var $width, $height, // Width and height of screen
+                        $vidwidth = this.videoWidth, // Width of video (actual width)
+                        $vidheight = this.videoHeight, // Height of video (actual height)
+                        $aspectRatio = $vidwidth / $vidheight; // The ratio the video's height and width are in
+
+                    (adjSize = function() { // Create function called adjSize
+
+                        $width = $(window).width(); // Width of the screen
+                        $height = $(window).height(); // Height of the screen
+
+                        $boxRatio = $width / $height; // The ratio the screen is in
+
+                        $adjRatio = $aspectRatio / $boxRatio; // The ratio of the video divided by the screen size
+
+                        // Set the container to be the width and height of the screen
+                        $('.vid_bg .wrapper.vid').css({'width' : $width+'px', 'height' : $height+'px'}); 
+
+                        if($boxRatio < $aspectRatio) { // If the screen ratio is less than the aspect ratio..
+                            // Set the width of the video to the screen size multiplied by $adjRatio
+                            $vid = $('.vid_bg .wrapper.vid video').css({'width' : $width*$adjRatio+'px'}); 
+                        } else {
+                            // Else just set the video to the width of the screen/container
+                            $vid = $('.vid_bg .wrapper.vid video').css({'width' : $width+'px'});
+                        }
+
+                    })(); // Run function immediately
+
+                    // Run function also on window resize.
+                    $(window).resize(adjSize);
+
+                });
+            }
+
+        });
+          
+           
+
+      </script>
+
+      
+      <script src="//use.typekit.net/wxj2ibw.js"></script>
+      <script>try{Typekit.load();}catch(e){}</script>
+      
+      
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+      
+      <style>
+        
+      </style>
+      
+  </head>
+  <body class="vid_bg">
+      <div class="wrapper vid">
+       <div class="content">
+           <div class="overlay">
+          
+            <video id="bgvideo" autoplay="true" loop>
+                <source src="image/Bokeh1-Stock%20Video.mov">
+                <source src="video.mp4" type="video/mp4">
+                <source src="" type="video/webm">
+            </video>
+           
+           <img class="main center-block img-responsive" src="image/SavetheDate_graphic.svg" alt="Save the Date - 29th November 2015">
+           
+           
+            
+            <div class="container-fluid">
+              <div class="row">
+                    <div class="col-xs-12">
+                        <div class="timer party-day">123</div>
+                    </div>
+              </div>
+            </div>
+               
+           </div>
+              
+         </div>
+                          
+                    
+
+
+        </div><!-- /. wrapper -->
+      
+      
+    
+      
+      
+      
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+      
+      <!-- Libraries -->
+      
+      <script src="bower_components/countdown.js/lib/countdown.js"></script>
+      
+      <!-- Custom app script -->
+      
+      <script src="js/app.js"></script>
+      
+      <script>
+          
+          // Initializing PARTY countdown
+
+            var partyDay = new Countdown({  // Custom
+              selector: '.party-day',
+              dateEnd: new Date('2015/11/29 5:00 PM'),
+              msgPattern : 'Celebrate in {months} months, {days} days, {hours} hours, {minutes} minutes <span class="no-break">&amp; {seconds} seconds!</span>'
+            });
+
+          
+
+      </script>
+      
+      
+      
+  </body>
+</html>

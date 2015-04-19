@@ -6547,39 +6547,12 @@ button.close {
     display: none !important;
   }
 }
-body {
-  text-align: center;
-  font-weight: 100;
-  background: url('/image/balmoral_rotunda_FULL.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-body .wrapper {
-  background-color: rgba(0, 0, 0, 0.3);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-body .wrapper img.main {
-  margin-top: 4em;
-  height: 80%;
-  width: 98vw;
-  display: table-cell;
-}
-@media (max-width: 768px) {
-  body .wrapper img.main {
-    margin-top: -1em;
-  }
-}
 .timer {
   color: hotpink;
   text-align: center;
   font-size: 2.5em;
   font-weight: 100;
+  padding-bottom: 1em;
 }
 @media (max-width: 768px) {
   .timer {
@@ -6588,4 +6561,67 @@ body .wrapper img.main {
 }
 .timer span.no-break {
   display: inline-block;
+}
+body.static-bg {
+  text-align: center;
+  font-weight: 100;
+  background: url('/image/balmoral_rotunda_FULL.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body.static-bg .overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+body.static-bg .overlay img.main {
+  margin-top: 4em;
+  height: 80%;
+  width: 98vw;
+  display: table-cell;
+}
+@media (max-width: 768px) {
+  body.static-bg .overlay img.main {
+    margin-top: -1em;
+  }
+}
+body.static-bg .overlay .timer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+body.vid_bg {
+  position: relative;
+  overflow: hidden;
+}
+body.vid_bg #bgvideo {
+  position: fixed;
+}
+body.vid_bg .content .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+}
+body.vid_bg .content .overlay img.main {
+  position: absolute;
+  height: 80%;
+  width: 98vw;
+  display: table-cell;
+  z-index: 2;
+}
+body.vid_bg .content .overlay .timer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }

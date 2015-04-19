@@ -1,6 +1,25 @@
+// Timer Styles
+
+        .timer {
+                color: hotpink;
+                text-align: center;
+                font-size: 2.5em;
+                font-weight: 100;
+                padding-bottom: 1em;
+                //background-color: aliceblue;
+            
+                
+                @media (max-width: @screen-sm-min) { font-size: 1.5em; }
+            
+                span.no-break {
+                    display: inline-block;
+                }
+            }
+
+
 // Custom Styles START //
 
-body {
+body.static-bg {
     
     text-align: center;
     font-weight: 100;
@@ -12,7 +31,7 @@ body {
         -o-background-size: cover;
         background-size: cover;
     
-    .wrapper {
+    .overlay {
         background-color: rgba(0, 0, 0, 0.3);
         position: absolute;
         top: 0;
@@ -33,26 +52,68 @@ body {
            
           }
         
+        .timer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        
     }
     
 }
 
+    body.vid_bg {
+            position: relative;
+            overflow: hidden;
 
-
-// Timer Styles
-
-        .timer {
-                color: hotpink;
-                text-align: center;
-                font-size: 2.5em;
-                font-weight: 100;
-                
-                @media (max-width: @screen-sm-min) { font-size: 1.5em; }
-            
-                span.no-break {
-                    display: inline-block;
-                }
+            #bgvideo {
+                position: fixed;
+                //display: block;
+                //z-index:0;
             }
+
+            .content {
+                //position: absolute;
+                //top: 0;
+                //left: 0;
+                
+                .overlay {
+                    
+                    background-color: rgba(0, 0, 0, 0.6);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    z-index: 5;
+
+                            img.main {
+                                position: absolute;
+                                height: 80%;
+                                width: 98vw;
+                                display: table-cell;
+                                z-index: 2;
+                            }
+                    
+                    .timer {
+                        position: fixed;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        //background-color: red;
+                    }
+
+                   }
+
+            }
+
+
+    }
+
+
+
+
 
 
           

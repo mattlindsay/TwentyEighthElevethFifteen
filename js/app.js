@@ -148,12 +148,9 @@
   };*/
 
   global.Countdown = Countdown;
+
 }(window));
 
-// Initializing one countdowns
 
-var weddingDay = new Countdown({  // Custom
-  selector: '.wedding-day',
-  dateEnd: new Date('2015/11/29 4:30 PM'),
-  msgPattern : 'Ceremony in {months} months, {days} days, {hours} hours, {minutes} minutes <span class="no-break">&amp; {seconds} seconds!</span>'
-});
+
+
