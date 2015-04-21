@@ -25,11 +25,34 @@ body.static-bg {
     font-weight: 100;
     //font-family: "interface",sans-serif;
     
+    nav {
+        position: absolute;
+        right: 0;
+        z-index: 2;
+        
+        .btn.btn-next {
+            color: #f3e7df;
+            border-radius: 0;
+            border:0;
+            background-color: hotpink;
+            //float: right;
+        }
+    }
+    
     background: url('/image/balmoral_rotunda_FULL.jpg') no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+            -webkit-transition: background 1s linear;
+            -moz-transition: background 1s linear;
+            -ms-transition: background 1s linear;
+            -o-transition: background 1s linear;
+            transition: background 1s linear;
+    
+    background-color: #3a0132;
+    
+        
     
     .overlay {
         background-color: rgba(0, 0, 0, 0.3);
@@ -53,22 +76,44 @@ body.static-bg {
           }
         
         .timer {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
+            //position: fixed;
+            //bottom: 0;
+            //left: 0;
+            //right: 0;
         }
         
     }
     
 }
 
+// END: Static 
+
+// START: Video
+
     body.vid_bg {
             position: relative;
             overflow: hidden;
+        
+            background-color: #3a0132;
+        
+            nav {
+                position: absolute;
+                left: 0;
+                z-index: 3;
+
+                .btn.btn-Back {
+                    color: #f3e7df;
+                    border-radius: 0;
+                    border:0;
+                    background-color: hotpink;
+                    //float: right;
+                }
+            }
 
             #bgvideo {
                 position: fixed;
+                opacity: 0.4;
+                
                 //display: block;
                 //z-index:0;
             }
@@ -77,8 +122,6 @@ body.static-bg {
                 //position: absolute;
                 //top: 0;
                 //left: 0;
-                
-                .overlay {
                     
                     background-color: rgba(0, 0, 0, 0.6);
                     position: absolute;
@@ -86,10 +129,10 @@ body.static-bg {
                     left: 0;
                     right: 0;
                     bottom: 0;
-                    z-index: 5;
+                    z-index: 1;
 
                             img.main {
-                                position: absolute;
+                                //position: absolute;
                                 height: 80%;
                                 width: 98vw;
                                 display: table-cell;
@@ -97,14 +140,13 @@ body.static-bg {
                             }
                     
                     .timer {
-                        position: fixed;
+                        //position: fixed;
                         bottom: 0;
                         left: 0;
                         right: 0;
                         //background-color: red;
                     }
 
-                   }
 
             }
 

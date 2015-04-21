@@ -10,6 +10,9 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
       
+      <!-- Animate Library -->
+      <link href="css/animate.css" rel="stylesheet">
+      
       
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -36,8 +39,9 @@
 
                     // Resize image accordingly
                     $('.wrapper.vid').css({
-                        'background-image' : 'url(poster.jpg)', 
+                        'background-image' : 'url(image/bokeh-bg.jpg)', 
                         'background-size' : 'cover', 
+                        'opacity' : '1',
                         'width' : $width+'px', 
                         'height' : $height+'px'
                     });
@@ -113,9 +117,11 @@
       
   </head>
   <body class="vid_bg">
+      <nav>
+          <a href="index.html" class="btn btn-lg btn-default btn-Back"><i class="glyphicon glyphicon-menu-left" aria-hidden="true"></i></a>
+      </nav>
       <div class="wrapper vid">
        <div class="content">
-           <div class="overlay">
           
             <video id="bgvideo" autoplay="true" loop>
                 <source src="image/Bokeh1-Stock%20Video.mov">
@@ -123,19 +129,19 @@
                 <source src="" type="video/webm">
             </video>
            
-           <img class="main center-block img-responsive" src="image/SavetheDate_graphic.svg" alt="Save the Date - 29th November 2015">
+           <img class="main center-block img-responsive animated fadeIn" src="image/SavetheDate_graphic.svg" alt="Save the Date - 29th November 2015">
            
            
             
             <div class="container-fluid">
               <div class="row">
                     <div class="col-xs-12">
-                        <div class="timer party-day">123</div>
+                        <div class="timer party-day animated slideInUp"></div>
                     </div>
               </div>
             </div>
                
-           </div>
+
               
          </div>
                           

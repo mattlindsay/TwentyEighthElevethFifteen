@@ -6570,6 +6570,23 @@ body.static-bg {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  -webkit-transition: background 1s linear;
+  -moz-transition: background 1s linear;
+  -ms-transition: background 1s linear;
+  -o-transition: background 1s linear;
+  transition: background 1s linear;
+  background-color: #3a0132;
+}
+body.static-bg nav {
+  position: absolute;
+  right: 0;
+  z-index: 2;
+}
+body.static-bg nav .btn.btn-next {
+  color: #f3e7df;
+  border-radius: 0;
+  border: 0;
+  background-color: hotpink;
 }
 body.static-bg .overlay {
   background-color: rgba(0, 0, 0, 0.3);
@@ -6590,37 +6607,42 @@ body.static-bg .overlay img.main {
     margin-top: -1em;
   }
 }
-body.static-bg .overlay .timer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
 body.vid_bg {
   position: relative;
   overflow: hidden;
+  background-color: #3a0132;
+}
+body.vid_bg nav {
+  position: absolute;
+  left: 0;
+  z-index: 3;
+}
+body.vid_bg nav .btn.btn-Back {
+  color: #f3e7df;
+  border-radius: 0;
+  border: 0;
+  background-color: hotpink;
 }
 body.vid_bg #bgvideo {
   position: fixed;
+  opacity: 0.4;
 }
-body.vid_bg .content .overlay {
+body.vid_bg .content {
   background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 5;
+  z-index: 1;
 }
-body.vid_bg .content .overlay img.main {
-  position: absolute;
+body.vid_bg .content img.main {
   height: 80%;
   width: 98vw;
   display: table-cell;
   z-index: 2;
 }
-body.vid_bg .content .overlay .timer {
-  position: fixed;
+body.vid_bg .content .timer {
   bottom: 0;
   left: 0;
   right: 0;
