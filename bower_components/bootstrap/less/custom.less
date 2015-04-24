@@ -94,7 +94,10 @@ body.static-bg {
             position: relative;
             overflow: hidden;
         
+        video { display: block; }
+        
             background-color: #3a0132;
+        background-image: url(/image/bokeh-bg.jpg);
         background-size: cover;
         
             nav {
@@ -134,6 +137,8 @@ body.static-bg {
                     right: 0;
                     bottom: 0;
                     z-index: 0;
+                
+                    @media (max-width: @screen-sm-min) and (orientation: landscape) { min-height: 500px;}
 
                             img.main {
                                 margin-top: 3.5em;

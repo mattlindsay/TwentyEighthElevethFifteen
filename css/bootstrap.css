@@ -6611,7 +6611,11 @@ body.vid_bg {
   position: relative;
   overflow: hidden;
   background-color: #3a0132;
+  background-image: url(/image/bokeh-bg.jpg);
   background-size: cover;
+}
+body.vid_bg video {
+  display: block;
 }
 body.vid_bg nav {
   position: absolute;
@@ -6638,6 +6642,11 @@ body.vid_bg .content {
   right: 0;
   bottom: 0;
   z-index: 0;
+}
+@media (max-width: 768px) and (orientation: landscape) {
+  body.vid_bg .content {
+    min-height: 500px;
+  }
 }
 body.vid_bg .content img.main {
   margin-top: 3.5em;
