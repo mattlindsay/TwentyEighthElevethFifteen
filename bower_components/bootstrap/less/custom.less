@@ -115,8 +115,10 @@ body.static-bg {
                 position: fixed;
                 top: 0;
                 opacity: 0.46 !important;
-                min-height: 600px;
+                //min-height: 600px;
                 z-index: -1;
+                
+                
             }
 
             .content {
@@ -141,8 +143,10 @@ body.static-bg {
                                 display: table-cell;
                                 z-index: 2;
                                 
-                                @media (max-width: @screen-sm-min) { margin-top: -20px;
-                                margin-bottom: -20px;}
+                                @media (max-width: @screen-sm-min) { margin-top: 0;
+                                margin-bottom: -10px; height: 50%;}
+                                
+                                
                                 
                             }
                     

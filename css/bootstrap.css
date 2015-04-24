@@ -6628,7 +6628,6 @@ body.vid_bg #bgvideo {
   position: fixed;
   top: 0;
   opacity: 0.46 !important;
-  min-height: 600px;
   z-index: -1;
 }
 body.vid_bg .content {
@@ -6649,8 +6648,9 @@ body.vid_bg .content img.main {
 }
 @media (max-width: 768px) {
   body.vid_bg .content img.main {
-    margin-top: -20px;
-    margin-bottom: -20px;
+    margin-top: 0;
+    margin-bottom: -10px;
+    height: 50%;
   }
 }
 body.vid_bg .content .timer {
