@@ -6625,7 +6625,10 @@ body.vid_bg nav .btn.btn-Back {
 }
 body.vid_bg #bgvideo {
   position: fixed;
-  opacity: 0.45;
+  top: 0;
+  opacity: 0.46;
+  min-height: 600px;
+  z-index: -1;
 }
 body.vid_bg .content {
   position: absolute;
@@ -6634,7 +6637,7 @@ body.vid_bg .content {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1;
+  z-index: 0;
 }
 body.vid_bg .content img.main {
   margin-top: 3.5em;
