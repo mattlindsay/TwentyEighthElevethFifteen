@@ -6625,11 +6625,11 @@ body.vid_bg nav .btn.btn-Back {
 }
 body.vid_bg #bgvideo {
   position: fixed;
-  opacity: 0.4;
+  opacity: 0.45;
 }
 body.vid_bg .content {
-  background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
+  min-height: 600px;
   top: 0;
   left: 0;
   right: 0;
@@ -6637,6 +6637,7 @@ body.vid_bg .content {
   z-index: 1;
 }
 body.vid_bg .content img.main {
+  margin-top: 3.5em;
   height: 80%;
   width: 98vw;
   display: table-cell;
