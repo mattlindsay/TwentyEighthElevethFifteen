@@ -1077,8 +1077,33 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .fadeIn {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
+  -webkit-animation-name: fadeInVidBG;
+  animation-name: fadeInVidBG;
+}
+
+@-webkit-keyframes fadeInVidBG {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 0.45;
+  }
+}
+
+@keyframes fadeInVidBG {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 0.45;
+  }
+}
+
+.fadeInVidBG {
+  -webkit-animation-name: fadeInVidBG;
+  animation-name: fadeInVidBG;
 }
 
 @-webkit-keyframes fadeInDown {

@@ -6611,6 +6611,7 @@ body.vid_bg {
   position: relative;
   overflow: hidden;
   background-color: #3a0132;
+  background-size: cover;
 }
 body.vid_bg nav {
   position: absolute;
@@ -6626,7 +6627,7 @@ body.vid_bg nav .btn.btn-Back {
 body.vid_bg #bgvideo {
   position: fixed;
   top: 0;
-  opacity: 0.46;
+  opacity: 0.46 !important;
   min-height: 600px;
   z-index: -1;
 }
@@ -6645,6 +6646,12 @@ body.vid_bg .content img.main {
   width: 98vw;
   display: table-cell;
   z-index: 2;
+}
+@media (max-width: 768px) {
+  body.vid_bg .content img.main {
+    margin-top: -20px;
+    margin-bottom: -20px;
+  }
 }
 body.vid_bg .content .timer {
   bottom: 0;
