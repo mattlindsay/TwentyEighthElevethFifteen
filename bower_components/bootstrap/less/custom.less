@@ -1,10 +1,16 @@
 // Timer Styles
 
+
+html {
+    font-weight: 100;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
         .timer {
                 color: hotpink;
                 text-align: center;
                 font-size: 2.5em;
-                font-weight: 100;
+                //font-weight: 100;
                 padding-bottom: 1em;
                 //background-color: aliceblue;
             
@@ -22,7 +28,7 @@
 body.static-bg {
     
     text-align: center;
-    font-weight: 100;
+    
     //font-family: "interface",sans-serif;
     
     nav {
@@ -97,8 +103,8 @@ body.static-bg {
         video { display: block; }
         
             background-color: #3a0132;
-        background-image: url(/image/bokeh-bg.jpg);
-        background-size: cover;
+            background-image: url(/image/bokeh-bg.jpg);
+            background-size: cover;
         
             nav {
                 position: absolute;
@@ -120,7 +126,7 @@ body.static-bg {
                 opacity: 0.46 !important;
                 //min-height: 600px;
                 z-index: -1;
-                
+                min-width: 100%;
                 
             }
 
@@ -131,14 +137,14 @@ body.static-bg {
                     
                    // background-color: rgba(0, 0, 0, 0.6);
                     position: absolute;
-                    min-height: 600px;
+                    min-height: 500px;
                     top: 0;
                     left: 0;
                     right: 0;
                     bottom: 0;
                     z-index: 0;
                 
-                    @media (max-width: @screen-sm-min) and (orientation: landscape) { min-height: 500px;}
+                    @media (max-width: @screen-sm-min) and (orientation: landscape) { min-height: 200px;}
 
                             img.main {
                                 margin-top: 3.5em;
@@ -149,7 +155,7 @@ body.static-bg {
                                 z-index: 2;
                                 
                                 @media (max-width: @screen-sm-min) { margin-top: 0;
-                                margin-bottom: -10px; height: 50%;}
+                                margin-bottom: -10px; height: 80%;}
                                 
                                 
                                 
