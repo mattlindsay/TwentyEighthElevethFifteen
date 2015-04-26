@@ -1072,7 +1072,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
@@ -5811,7 +5811,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: normal;
   line-height: 1.4;
@@ -5918,7 +5918,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.42857143;
@@ -6547,19 +6547,20 @@ button.close {
     display: none !important;
   }
 }
-html {
+body {
   font-weight: 100;
-  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-font-smoothing: antialiased;
 }
 .timer {
   color: hotpink;
   text-align: center;
   font-size: 2.5em;
   padding-bottom: 1em;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
 @media (max-width: 768px) {
   .timer {
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
 }
 .timer span.no-break {
@@ -6599,14 +6600,14 @@ body.static-bg .overlay {
   bottom: 0;
 }
 body.static-bg .overlay img.main {
-  margin-top: 4em;
+  margin-top: 5em;
   height: 80%;
   width: 98vw;
   display: table-cell;
 }
 @media (max-width: 768px) {
   body.static-bg .overlay img.main {
-    margin-top: -1em;
+    margin-top: 1em;
   }
 }
 body.vid_bg {
